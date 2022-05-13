@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/listaPersonasFragment">
+
+    <fragment
+        android:id="@+id/listaPersonasFragment"
+        android:name="com.jjvcorporation.registropersona.views.personas.ListaPersonasFragment"
+        android:label="fragment_lista_personas"
+        tools:layout="@layout/fragment_lista_personas" >
+        <action
+            android:id="@+id/action_to_personasFragment"
+            app:destination="@id/personasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personasFragment"
+        android:name="com.jjvcorporation.registropersona.views.personas.PersonasFragment"
+        android:label="fragment_personas"
+        tools:layout="@layout/fragment_personas" />
+</navigation>
